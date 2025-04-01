@@ -49,11 +49,17 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                          {summary}
-                        </div>
+                        <Link
+                          href={`/blog/${slug}`}
+                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          aria-label={`Read more: "${title}"`}
+                        >
+                          <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                            {summary}
+                          </div>
+                        </Link>
                       </div>
-                      <div className="text-base leading-6 font-medium">
+                      {/* <div className="text-base leading-6 font-medium">
                         <Link
                           href={`/blog/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -61,7 +67,7 @@ export default function Home({ posts }) {
                         >
                           Read more &rarr;
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </article>

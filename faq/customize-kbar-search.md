@@ -23,7 +23,7 @@ export const SearchProvider = ({ children }) => {
         defaultActions: [
           {
             id: 'homepage',
-            name: 'Homepage',
+            name: '메인페이지',
             keywords: '',
             shortcut: ['h', 'h'],
             section: 'Home',
@@ -31,7 +31,7 @@ export const SearchProvider = ({ children }) => {
           },
           {
             id: 'projects',
-            name: 'Projects',
+            name: '프로젝트',
             keywords: '',
             shortcut: ['p'],
             section: 'Home',
