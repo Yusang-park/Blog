@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: '박유상의 블로그 - 코딩으로 세계정복',
+  title: '코딩으로 세계정복',
   author: '박유상',
   headerTitle: '코딩으로 세계정복',
   description: '실리콘밸리 스타트업의 개발자 박유상의 블로그입니다',
