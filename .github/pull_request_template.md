@@ -1,15 +1,25 @@
-#### Description
+<!-- 1. Verify PR Title -->
+<!-- PR Title example: `[fix | refactor | feat | update | documentation]: repair the page layout` -->
+
+<!-- 2. Provide Description of the changes -->
+
+## Description
 
 <!--
-Please include as detailed of a description as possible, including screenshots if applicable.
+- provide a description of the changes made. If there are some pending TODOs, include them there as well.
+- Any guidance for reviewers to better understand the changes.
+- Any visuals (screenshots, screen recordings) that can give assurance that the changes are safe to merge.
 -->
 
-#### Notion Test Page ID
+<!-- 3. Add link to the Github Issue for which these changes are made -->
 
-<!--
-Please include the ID of at least one publicly accessible Notion page related to your PR.
+## Related tickets
 
-This is extremely helpful for us to debug and fix issues.
+https://github.com/morethanmin/morethan-log/issues/XX
 
-Thanks!
--->
+<!-- 4. Make sure the following actions are checked before finalising your PR -->
+
+## PR Checklist
+
+- [ ] I have read the [Contributing Guide](./CONTRIBUTING.md)
+- [ ] I have written documents and tests, if needed.
