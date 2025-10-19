@@ -6,6 +6,8 @@ class MyDocument extends Document {
     return (
       <Html lang={CONFIG.lang}>
         <Head>
+          <title>{CONFIG.blog.title}</title>
+          <meta name="description" content={CONFIG.blog.description} />
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="apple-touch-icon"

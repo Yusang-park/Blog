@@ -6,13 +6,12 @@ const NavBar: React.FC = () => {
   const links = [{ id: 1, name: "About", to: "/about" }]
   return (
     <StyledWrapper className="">
-        <SearchInput />
-
-        {links.map((link) => (
-          <button key={link.id}>
-            <Link href={link.to}>{link.name}</Link>
-          </button>
-        ))}
+      <SearchInput />
+      {links.map((link) => (
+        <button key={link.id}>
+          <Link href={link.to}>{link.name}</Link>
+        </button>
+      ))}
     </StyledWrapper>
   )
 }

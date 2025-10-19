@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "코딩으로 세계정복 - 박유상의 블로그",
+    title: "코딩으로 세계정복",
     description: "Software Engineer & Entrepreneur의 블로그",
     scheme: "light", // 'light' | 'dark' | 'system'
   },
@@ -31,14 +31,14 @@ const CONFIG = {
 
   // notion configuration (required)
   notionConfig: {
-    pageId: '21ec6d8302dd80fea495cccbe154c2e8',
+    pageId: "21ec6d8302dd80fea495cccbe154c2e8",
   },
 
   // plugin configuration (optional)
   googleAnalytics: {
     enable: true,
     config: {
-      measurementId: "G-JK45W3SHJZ"
+      measurementId: "G-JK45W3SHJZ",
     },
   },
   googleSearchConsole: {

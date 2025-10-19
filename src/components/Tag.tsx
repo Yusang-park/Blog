@@ -14,7 +14,7 @@ const Tag: React.FC<Props> = ({ children }) => {
   }
   return (
     <StyledWrapper onClick={() => handleClick(children)}>
-      {children}
+      #{children}
     </StyledWrapper>
   )
 }
@@ -24,12 +24,12 @@ export default Tag
 const StyledWrapper = styled.div`
   padding-right: 0.125rem;
   border-radius: 50px;
-  font-size: 0.825rem;
+  font-size: 1rem;
   line-height: 1rem;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.gray10};
   cursor: pointer;
   &:hover {
     color: ${({ theme }) => theme.colors.gray12};
+    text-decoration: underline;
   }
 `

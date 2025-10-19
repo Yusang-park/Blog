@@ -30,18 +30,14 @@ const Feed: React.FC<Props> = () => {
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
-        <Image 
-          src="/text-logo.png" 
-          alt="logo" 
-          width={170} 
-          height={150} 
-          css={{
-            filter: scheme === "dark" ? "none" : "invert(1)"
-          }}
-        />
-        <div className="title">코딩으로 세계정복까지<br/><br/>박유상의 블로그</div>
+        <div className="title">
+          코딩으로 세계정복까지
+          <br />
+          <br />
+          박유상의 블로그
+        </div>
         <TagList />
-          <div className="footer">
+        <div className="footer">
           <Footer />
         </div>
       </div>
@@ -63,10 +59,10 @@ const Feed: React.FC<Props> = () => {
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       > */}
-        {/* <ProfileCard />
+      {/* <ProfileCard />
         <ServiceCard />
         <ContactCard /> */}
-      
+
       {/* </div> */}
     </StyledWrapper>
   )

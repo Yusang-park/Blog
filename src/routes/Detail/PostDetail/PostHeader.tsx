@@ -16,7 +16,16 @@ const PostHeader: React.FC<Props> = ({ data }) => {
       <h1 className="title">{data.title}</h1>
       {data.type[0] !== "Paper" && (
         <nav>
-          <div className="top">
+          <div className="tag-container">
+            {data.tags && (
+              <div className="tags">
+                {data.tags.map((tag: string) => (
+                  <Tag key={tag}>{tag}</Tag>
+                ))}
+              </div>
+            )}
+          </div>
+          <div className="author-container">
             {data.author && data.author[0] && data.author[0].name && (
               <>
                 <div className="author">
@@ -39,15 +48,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
               )}
             </div>
           </div>
-          <div className="mid">
-            {data.tags && (
-              <div className="tags">
-                {data.tags.map((tag: string) => (
-                  <Tag key={tag}>{tag}</Tag>
-                ))}
-              </div>
-            )}
-          </div>
+
           {data.thumbnail && (
             <div className="thumbnail">
               <Image
@@ -75,7 +76,7 @@ const StyledWrapper = styled.div`
   nav {
     margin-top: 1.5rem;
     color: ${({ theme }) => theme.colors.gray11};
-    > .top {
+    > .author-container {
       display: flex;
       margin-bottom: 0.75rem;
       gap: 0.75rem;
@@ -90,7 +91,8 @@ const StyledWrapper = styled.div`
         margin-bottom: 0.25rem;
         align-self: stretch;
         width: 1px;
-        background-color: ${({ theme }) => theme.scheme === "light" ? 'white' : theme.colors.gray2};
+        background-color: ${({ theme }) =>
+          theme.scheme === "light" ? "white" : theme.colors.gray2};
       }
       .date {
         margin-right: 0.5rem;
@@ -100,7 +102,7 @@ const StyledWrapper = styled.div`
         }
       }
     }
-    > .mid {
+    > .tag-container {
       display: flex;
       margin-bottom: 1rem;
       align-items: center;
