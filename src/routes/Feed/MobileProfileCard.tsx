@@ -8,20 +8,7 @@ type Props = {
 }
 
 const MobileProfileCard: React.FC<Props> = () => {
-  return (
-    <StyledWrapper>
-      <Image 
-          src="/text-logo.png" 
-          alt="logo" 
-          width={170} 
-          height={150} 
-          css={{
-            filter: "invert(1)"
-          }}
-        />
-        <div className="title">코딩으로 세계정복 할 때까지<br/>공부하는 블로그</div>
-    </StyledWrapper>
-  )
+  return <StyledWrapper>{/* Mobile에서만 보이는 프로필 카드 */}</StyledWrapper>
 }
 
 export default MobileProfileCard

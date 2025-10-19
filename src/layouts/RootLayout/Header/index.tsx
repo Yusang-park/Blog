@@ -28,7 +28,10 @@ const StyledWrapper = styled.div`
   z-index: ${zIndexes.header};
   position: sticky;
   top: 0;
-  background-color: ${({ theme }) => theme.scheme === "light" ? "white" : theme.colors.gray2};
+  background-color: ${({ theme }) =>
+    theme.scheme === "light"
+      ? "rgba(255, 255, 255, 0.1)"
+      : `rgba(${theme.colors.gray2}, 0.1)`};
 
   .container {
     display: flex;

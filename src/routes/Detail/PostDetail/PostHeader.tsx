@@ -13,7 +13,7 @@ type Props = {
 const PostHeader: React.FC<Props> = ({ data }) => {
   return (
     <StyledWrapper>
-      <h1 className="title">{data.title}</h1>
+      <h1 className="post-title">{data.title}</h1>
       {data.type[0] !== "Paper" && (
         <nav>
           <div className="tag-container">
@@ -68,7 +68,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
 export default PostHeader
 
 const StyledWrapper = styled.div`
-  .title {
+  .post-title {
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 700;
@@ -76,6 +76,9 @@ const StyledWrapper = styled.div`
   nav {
     margin-top: 1.5rem;
     color: ${({ theme }) => theme.colors.gray11};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.gray6};
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     > .author-container {
       display: flex;
       margin-bottom: 0.75rem;
